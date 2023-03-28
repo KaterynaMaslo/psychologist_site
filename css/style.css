@@ -34,6 +34,7 @@ img {
     color: #fff;
     background-blend-mode: overlay;
     background:url("../img/briks.jpg") no-repeat center / cover, rgba(0,0,0,.7);
+    margin-bottom: 60px;
 }
 
 
@@ -202,7 +203,7 @@ img {
     }
 
     .contact-form {
-
+        margin-bottom: 60px;
     }
 /*contact-form*/
 
@@ -259,6 +260,13 @@ img {
 /*services*/
 
 /*about*/
-
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.about__left-block{
+    padding: 35px 50px 60px;
+}
 /*about*/
 
