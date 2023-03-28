@@ -52,6 +52,11 @@ img {
         cursor: pointer;
     }
 
+    .btn_bordered {
+        background: none;
+        border: 3px solid #2D5E5E;
+    }
+
     .btn:hover,.btn:focus {
         background-color: #6DE1E3;
     }
@@ -189,6 +194,11 @@ img {
         margin: 0 0 20px;
     }
 
+    .contact-form__input {
+        border: 1px solid;
+        border-radius: 10px;
+    }
+
     .contact-form__checkbox {
         grid-column: 1 / -1;
         text-align: center;
@@ -264,9 +274,24 @@ img {
     display: flex;
     align-items: center;
     flex-direction: row;
+    gap: 50px;
 }
-.about__left-block{
-    padding: 35px 50px 60px;
+
+.about__title {
+    font:700 36px/1.5 'Oswald', sans-serif;
+    margin: 60px 0 50px;
+}
+
+.about__text {
+    font:700 16px/1.5 'Montserrat', sans-serif;
+    max-width: 625px;
+    margin: 0 0 35px 0;
+}
+.about__button {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 60px;
 }
 /*about*/
 

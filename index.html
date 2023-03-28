@@ -127,17 +127,17 @@
         <h2 class="subtitle">
             Записаться на прием
         </h2>
-        <input type="text" class="contact-form__input">
-        <input type="text" class="contact-form__input">
-        <input type="text" class="contact-form__input">
-        <textarea class="contact-form__input contact-form__input_textarea"></textarea>
+        <input type="text" placeholder="Ваше имя *" name="name" required class="contact-form__input">
+        <input type="tel" placeholder="Ваш телефон *" name="phone" required class="contact-form__input">
+        <input type="text" placeholder="Тема встречи *" name="Topic of the meeting" required class="contact-form__input">
+        <textarea placeholder="Пожелания" name="Wishes" class="contact-form__input contact-form__input_textarea"></textarea>
 
         <label class="contact-form__checkbox">
             <input type="checkbox">
             Я согласен с политикой конфиденциальности
         </label>
 
-        <button class="btn" type="submit">
+        <button class="btn contact-form__btn" type="submit">
             Отправить
         </button>
     </form>
