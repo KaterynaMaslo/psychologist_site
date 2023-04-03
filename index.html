@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -129,12 +129,19 @@
         </h2>
         <input type="text" placeholder="Ваше имя *" name="name" required class="contact-form__input">
         <input type="tel" placeholder="Ваш телефон *" name="phone" required class="contact-form__input">
-        <input type="text" placeholder="Тема встречи *" name="Topic of the meeting" required class="contact-form__input">
+        <select class="contact-form__select" required name="Topic of the meeting">
+            <option value="" selected disabled>Тема встречи *</option>
+            <option value="t1">Topic 1</option>
+            <option value="t2">Topic 2</option>
+            <option value="t3">Topic 3</option>
+        </select>
         <textarea placeholder="Пожелания" name="Wishes" class="contact-form__input contact-form__input_textarea"></textarea>
 
         <label class="contact-form__checkbox">
-            <input type="checkbox">
-            Я согласен с политикой конфиденциальности
+            <input type="checkbox" class="contact-form__checkbox-input visually-hidden" value="agree with policy" id="required_check" name="agree_policy" required>
+            <span class="contact-form__checkbox-label">
+                Я согласен с политикой конфиденциальности
+            </span>
         </label>
 
         <button class="btn contact-form__btn" type="submit">
@@ -236,6 +243,6 @@
         </li>
     </ul>
 </footer>
-
+</script>
 </body>
 </html>
