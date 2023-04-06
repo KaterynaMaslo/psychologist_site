@@ -60,7 +60,7 @@
     }
     .discount-form .btn {
         grid-column: 1 / -1;
-        max-width: 300px;
+        max-width: 250px;
         margin: auto;
         order: 1;
     }
@@ -80,7 +80,7 @@
     }
     .btn {
         max-width: 180px;
-        line-height: 24px;
+        line-height: 30px;
     }
     .header {
         padding-top: 10px;
@@ -121,5 +121,19 @@
     .about__img {
         grid-row: 2;
         grid-column: 1 / 2;
+    }
+    .contact-form {
+        padding: 0 90px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto repeat(3, 40px) 40px 40px;
+    }
+    .contact-form__input.contact-form__input_textarea {
+        grid-column: 1;
+        grid-row: 5/7;
+    }
+    .discount-form {
+        padding: 0 90px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 40px 40px auto;
     }
 }
